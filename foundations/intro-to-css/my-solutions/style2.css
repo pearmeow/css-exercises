@@ -1,0 +1,19 @@
+.odd {
+    /* Shared stuff */
+    background-color: #DE3163;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+#num2 {
+    color: #0000FF;
+    font-size: 36px;
+}
+
+.font-size-24 {
+    font-size: 24px;
+}
+
+#num4 {
+    background-color: #00FF00;
+    font-weight: 700;
+}
