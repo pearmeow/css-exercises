@@ -12,12 +12,28 @@
   background-color: rgb(163, 162, 162);
 }
 
+@keyframes squishy {
+  from {
+    transform-origin: top;
+    transform: scaleY(0%);
+  }
+
+  50% {
+    transform-origin: top;
+    transform: scaleY(120%);
+  }
+
+  to {
+    transform-origin: top;
+    transform: scaleY(100%);
+  }
+}
+
 .dropdown-menu {
   list-style: none;
   padding: 0;
   margin: 0;
   background-color: rgb(99, 97, 97);
-
   display: none;
 }
 
@@ -26,7 +42,8 @@ ul.dropdown-menu li:hover {
 }
 
 .visible {
+  animation-name: squishy;
+  animation-duration: 500ms;
+  animation-fill-mode: both;
   display: block;
 }
-
-
